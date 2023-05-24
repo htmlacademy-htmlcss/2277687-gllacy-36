@@ -96,6 +96,10 @@ body {
     flex-grow: 1;
 }
 
+.main-catalog {
+    flex-grow: 1;
+}
+
 /* Buttons */
 
 .btn {
@@ -263,7 +267,7 @@ body {
 .slider-list {
     margin: 0;
     padding-left: 70px;
-    padding-top: 24px;
+    padding-top: 22px;
 }
 
 .slide {
@@ -277,6 +281,10 @@ body {
 
 .slide-text {
     max-width: 470px;
+}
+
+.slide-text-first {
+    padding-top: 12px;
 }
 
 .slide-title {
@@ -502,6 +510,7 @@ body {
 
 .present-block {
     padding: 36px;
+    padding-bottom: 32px;
 
     border-radius: 16px;
     background-color: #ff7799;
@@ -512,14 +521,14 @@ body {
 .present-block-raspberry {
     background-image: url(../images/raspberry.png);
     background-size: 200px auto;
-    background-position: right 15px top 30px;
+    background-position: right 13px top 24px;
     background-repeat: no-repeat;
 }
 
 .present-block-marshmallow {
     background-image: url(../images/marshmallow.png);
-    background-size: 240px auto;
-    background-position: right top 30px;
+    background-size: 225px auto;
+    background-position: right -12px top 27px;
     background-repeat: no-repeat;
 }
 
@@ -533,7 +542,7 @@ body {
 
 .present-description {
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
 
     font-size: 16px;
     line-height: 22px;
@@ -558,7 +567,9 @@ body {
 .popular-tastes-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    column-gap: 30px;
+    row-gap: 38px;
+
 
     margin: 0;
     padding: 0;
@@ -569,7 +580,7 @@ body {
 .popular-taste-item {
     position: relative;
 
-    margin-top: 51px;
+    margin-top: 53px;
     padding: 133px 40px 24px 40px;
 
     background-color: #ffffff;
@@ -585,6 +596,7 @@ body {
     display: block;
 
     border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(45, 52, 64, .1);
 }
 
 .popular-taste-title {
@@ -650,12 +662,14 @@ body {
 
     background-image: url(../images/waffer-background.png);
     background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     border-radius: 16px;
 }
 
 .about-gllacy-block {
     padding: 56px 40px;
+    padding-top: 57px;
 
     background-color: #ffffff;
     border-radius: 16px;
@@ -686,6 +700,10 @@ body {
     position: relative;
 
     padding-left: 64px;
+
+    font-size: 16px;
+    line-height: 22px;
+    color: #565c66;
 }
 
 .about-gllacy-item::before {
@@ -693,8 +711,8 @@ body {
     left: 0;
     top: 0;
 
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
 
     border: 2px #2d3440 solid;
     border-radius: 50%;
@@ -739,8 +757,8 @@ body {
     border-radius: 16px;
     background-color: #ffffff;
     background-image: url(../images/sorbet.png);
-    background-size: 100%;
-    background-position: right -60px center;
+    background-size: 112%;
+    background-position: right -70px center;
     background-repeat: no-repeat;
 
     box-sizing: border-box;
@@ -748,7 +766,7 @@ body {
 
 .blog-subtitle {
     margin: 0;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 
     font-size: 16px;
     line-height: 20px;
@@ -771,6 +789,7 @@ body {
     border-radius: 16px;
     background-image: url(../images/mail-background.png);
     background-size: cover;
+    background-position: center;
 }
 
 .subscribe-block {
@@ -830,13 +849,16 @@ body {
     border-radius: 16px;
     background-color: #ffffff;
     background-image: url(../images/delivery-background.png);
-    background-size: 100%;
-    background-position: right center;
+    background-size: 105%;
+    background-position: right -58px center;
+    background-repeat: no-repeat;
 }
 
 .delivery-text {
     max-width: 371px;
     margin-right: 50px;
+    margin-left: 36px;
+    margin-top: 5px;
 }
 
 .delivery-title {
@@ -934,7 +956,7 @@ body {
 .delivery-form-input-adress {
     grid-column: 1 / -1;
     grid-row: 5 / 6;
-    margin-bottom: 32px;
+    margin-bottom: 26px;
 }
 
 .btn-delivery {
@@ -962,7 +984,7 @@ body {
 
 .contacts-block {
     max-width: 343px;
-    padding: 40px;
+    padding: 39px;
 
     background-color: #fcfcfc;
     border-radius: 8px;
@@ -993,7 +1015,7 @@ body {
 
 .contacts-subscription {
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
 
     font-size: 14px;
     line-height: 20px;
@@ -1046,10 +1068,15 @@ body {
 
 .footer-info-links-list {
     display: grid;
-    grid-template-columns: 174px 208px;
+    grid-template-columns: 150px 208px;
+    row-gap: 3px;
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+.footer-info-link-item {
+    line-height: 0;
 }
 
 .footer-info-link {
@@ -1078,4 +1105,9 @@ body {
     color: #2d3440;
     text-decoration: none;
     border-bottom: 1px #565c66 solid;
+}
+
+.html-academy-link-logo {
+    display: block;
+    margin-bottom: 7px;
 }
