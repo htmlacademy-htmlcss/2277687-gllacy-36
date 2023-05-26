@@ -9,14 +9,13 @@
 
     <body>
         <div class="page-container">
-            <header class="main-header">
+            <header class="main-header catalog-main-header">
                 <nav class="header-navigation">
                     <ul class="header-navigation-list">
                         <li class="header-navigation-logo-item">
                             <a class="header-navigation-logo-link" href="#">
                                 <img class="header-logo-image" src="./images/logo.svg" alt="Лого." width="137"
                                     height="56">
-                                <h1 class="visually-hidden">Интернет-магазин мороженого "Глейси"</h1>
                             </a>
                         </li>
                         <li class="header-navigation-item">
@@ -63,6 +62,27 @@
                 </ul>
             </header>
             <main class="main-catalog">
+                <header class="inner-header">
+                    <ol class="breadcrumbs">
+                        <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="./index.html">Главная</a></li>
+                        <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Каталог</a></li>
+                        <li class="breadcrumbs-item"><a class="breadcrumbs-link breadcrumbs-link-current">Сливочное
+                                мороженое</a></li>
+                    </ol>
+                    <h1 class="catalog-page-title">Сливочное мороженое</h1>
+                </header>
+                <section class="catalog-filter">
+                    <h2 class="visually-hidden">Фильтр</h2>
+                    <form class="catalog-filter-form">
+                        <label>
+                            <select>
+                                <option>По популярности</option>
+                                <option>По цене min</option>
+                                <option>По цене max</option>
+                            </select>
+                        </label>
+                    </form>
+                </section>
                 <ul class="popular-tastes-list">
                     <li class="popular-taste-item">
                         <img class="popular-taste-image" src="./images/taste-raspberry.png" alt="Малинка" width="168"
