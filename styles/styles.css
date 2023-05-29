@@ -134,6 +134,17 @@ body {
     background-clip: padding-box;
 }
 
+.btn-submit {
+    padding: 8px;
+
+    font-size: 14px;
+
+    border-radius: 26px;
+    background-color: rgba(252, 252, 252, .3);
+    border: 2px #ffffff solid;
+    background-clip: padding-box;
+}
+
 /*Header*/
 
 .main-header {
@@ -308,6 +319,118 @@ body {
     font-size: 32px;
     line-height: 46px;
     font-weight: 900;
+}
+
+
+/* Filter */
+
+.catalog-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.filter-ruleset {
+    padding: 0;
+    margin-right: 24px;
+
+    border: none;
+}
+
+.filter-ruleset-title {
+    padding-left: 16px;
+    margin-bottom: 8px;
+
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.catalog-filter-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.catalog-sort-select {
+    width: 196px;
+    padding: 8px 16px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(252, 252, 252, .3);
+    appearance: none;
+}
+
+
+.filter-btn {
+    width: 185px;
+}
+
+
+/* Range slider */
+
+.range-filter-container {
+    padding: 18px 16px;
+
+    background-color: rgba(252, 252, 252, .3);
+    border-radius: 20px;
+}
+
+.range-filter {
+    width: 164px;
+    margin: 0;
+    padding: 0;
+}
+
+.range-filter-scale {
+    position: relative;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #dcdcdc;
+}
+
+.range-filter-bar {
+    position: absolute;
+
+    height: 2px;
+
+    background-color: #000000;
+}
+
+.range-filter-toggle {
+    position: absolute;
+    display: block;
+
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 0;
+
+    background-color: #fcfcfc;
+    /* background-clip: padding-box; */
+    border-radius: 50%;
+    border: 6px #000000 solid;
+
+    cursor: pointer;
+
+}
+
+.range-filter-toggle-min {
+    top: -8px;
+    left: -9px;
+}
+
+.range-filter-toggle-max {
+    top: -8px;
+    right: -9px;
 }
 
 /* Slider */
