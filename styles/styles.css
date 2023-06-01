@@ -448,7 +448,7 @@ body {
     list-style-type: none;
 }
 
-.catalog-filter-item {
+.catalog-filter-item:not(:last-child) {
     margin-right: 16px;
 }
 
@@ -830,6 +830,10 @@ body {
 
 .popular-tastes {
     margin-bottom: 80px;
+}
+
+.popular-tastes-catalog {
+    margin-bottom: 16px;
 }
 
 .popular-tastes-title {
@@ -1305,6 +1309,9 @@ body {
 .catalog-pagination-navigation {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 37px 0;
+    margin-bottom: 40px;
 }
 
 .pagination {
@@ -1409,6 +1416,7 @@ body {
     justify-content: space-between;
     width: 100%;
     padding: 48px 0;
+    border-top: 1px rgba(252, 252, 252, .3) solid;
 }
 
 .footer-info-links-list {
