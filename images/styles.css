@@ -1359,11 +1359,11 @@ body {
 }
 
 .pagination-button-left {
-    background-image: url(../images/arrow-left-black.svg);
+    background-image: url(../images/arrow-left.svg);
 }
 
 .pagination-button-right {
-    background-image: url(../images/arrow-right-black.svg);
+    background-image: url(../images/arrow-right.svg);
     margin-left: 8px;
 }
 
