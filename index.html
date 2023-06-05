@@ -18,7 +18,7 @@
                 <h1 class="visually-hidden">Интернет-магазин мороженого "Глейси"</h1>
               </a>
             </li>
-            <li class="header-navigation-item">
+            <li class="header-navigation-item header-navigation-item-catalog">
               <a class="header-navigation-link header-navigation-catalog-link" href="./catalog.html">
                 Каталог
                 <svg class="header-navigation-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -27,6 +27,26 @@
                     d="M3.80799 6.19526C3.54764 5.93491 3.12553 5.93491 2.86518 6.19526C2.60483 6.45561 2.60483 6.87772 2.86518 7.13807L7.52553 11.7984C7.52759 11.8005 7.52967 11.8026 7.53177 11.8047C7.66246 11.9354 7.83392 12.0005 8.00521 12C8.17518 11.9995 8.34498 11.9344 8.47466 11.8047C8.47675 11.8027 8.47881 11.8006 8.48087 11.7985L13.1412 7.13807C13.4016 6.87772 13.4016 6.45561 13.1412 6.19526C12.8809 5.93491 12.4588 5.93491 12.1984 6.19526L8.00321 10.3905L3.80799 6.19526Z" />
                 </svg>
               </a>
+              <section class="popover-catalog">
+                <ul class="popover-catalog-list">
+                  <li class="popover-catalog-item popover-catalog-item-new">
+                    <a class="popover-catalog-link" href="#">Новинки</a>
+                  </li>
+                  <hr class="popover-catalog-divider">
+                  <li class="popover-catalog-item">
+                    <a class="popover-catalog-link" href="#">Сливочное</a>
+                  </li>
+                  <li class="popover-catalog-item">
+                    <a class="popover-catalog-link" href="#">Щербеты</a>
+                  </li>
+                  <li class="popover-catalog-item">
+                    <a class="popover-catalog-link" href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="popover-catalog-item">
+                    <a class="popover-catalog-link" href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </section>
             </li>
             <li class="header-navigation-item">
               <a class="header-navigation-link" href="#">
@@ -44,20 +64,82 @@
           <li class="user-menu-item">
             <p class="user-menu-phone" href="#">+7 800 555-86-28</p>
           </li>
-          <li class="user-menu-item">
+          <li class="user-menu-item user-menu-search-item">
             <a class="user-menu-link user-menu-search-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
+            <section class="popover-search">
+              <h2 class="visually-hidden">Поиск</h2>
+              <label class="visually-hidden" for="search">Поиск по сайту</label>
+              <input class="search-input" name="search" id="search" type="text" placeholder="Поиск по сайту">
+            </section>
           </li>
-          <li class="user-menu-item">
+          <li class="user-menu-item user-menu-login-item">
             <a class="user-menu-link user-menu-link-login" href="#">
               Вход
             </a>
+            <section class="popover-login">
+              <h2 class="popover-login-title">Личный кабинет</h2>
+              <form class="login-form" method="post" action="https://echo.htmlacademy.ru/">
+                <label class="visually-hidden" for="login-email">Электронная почта</label>
+                <input class="login-input login-email-input" name="login-data" id="login-email" type="email"
+                  placeholder="example@test.ru">
+                <label class="visually-hidden" for="login-password">Пароль</label>
+                <input class="login-input login-password-input" name="login-data" id="login-password" type="email"
+                  placeholder="12345678">
+                <button class="btn btn-secondary login-btn" type="submit">Войти</button>
+                <div class="login-form-links-list">
+                  <a class="login-form-link" href="#">Забыли пароль?</a>
+                  <a class="login-form-link" href="#">Регистрация</a>
+                </div>
+              </form>
+            </section>
           </li>
-          <li class="user-menu-item">
+          <li class="user-menu-item user-menu-cart-item">
             <a class="user-menu-link user-menu-link-cart" href="#">
               2 товара
             </a>
+            <a class="user-menu-link user-menu-link-cart link-cart-empty" href="#">
+              Нет товаров
+            </a>
+            <section class="popover-cart">
+              <h2 class="popover-cart-title">Корзина</h2>
+              <ul class="popover-cart-products">
+                <li class="popover-cart-product">
+                  <a class="cart-product-description" href="#">
+                    <img class="cart-product-image" width="46" height="46" src="./images/taste-raspberry.png"
+                      alt="Любительская селфи-палка">
+                    <div class="cart-product-text">
+                      <p class="cart-product-name">Малинка</p>
+                      <p class="cart-product-subscription">1 кг х 310 ₽</p>
+                    </div>
+                  </a>
+                  <p class="cart-product-price" href="#">310 ₽</p>
+                  <a class="cart-delete-product-btn" href="">
+                    <span class="visually-hidden">Удалить продукт из корзины</span>
+                  </a>
+                </li>
+                <li class="popover-cart-product">
+                  <a class="cart-product-description" href="#">
+                    <img class="cart-product-image" width="46" height="46" src="./images/taste-sorbet.png"
+                      alt="Профессиональная селфи-палка">
+                    <div class="cart-product-text">
+                      <p class="cart-product-name">Бабл-гам</p>
+                      <p class="cart-product-subscription">1,5 кг х 320 ₽</p>
+                    </div>
+                  </a>
+                  <p class="cart-product-price" href="#">480 ₽</p>
+                  <a class="cart-delete-product-btn" href="">
+                    <span class="visually-hidden">Удалить продукт из корзины</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="cart-footer">
+                <a class="btn btn-secondary cart-btn" href="#">Оформить заказ</a>
+                <p class="cart-amount">Итого: 790 ₽</p>
+              </div>
+              <p class="cart-empty-text">Ваша корзина пока пуста</p>
+            </section>
           </li>
         </ul>
       </header>
