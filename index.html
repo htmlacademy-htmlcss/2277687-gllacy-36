@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" type="image/png" href="./images/favicon.png" sizes="32x32">
     <title>HTML Academy: Глейси</title>
   </head>
 
@@ -19,7 +20,7 @@
               </a>
             </li>
             <li class="header-navigation-item header-navigation-item-catalog">
-              <a class="header-navigation-link header-navigation-catalog-link" href="./catalog.html">
+              <a class="header-navigation-link header-navigation-catalog-link" href="">
                 Каталог
                 <svg class="header-navigation-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                   focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +35,7 @@
                   </li>
                   <hr class="popover-catalog-divider">
                   <li class="popover-catalog-item">
-                    <a class="popover-catalog-link" href="#">Сливочное</a>
+                    <a class="popover-catalog-link" href="./catalog.html">Сливочное</a>
                   </li>
                   <li class="popover-catalog-item">
                     <a class="popover-catalog-link" href="#">Щербеты</a>
@@ -152,17 +153,29 @@
                 <h3 class="slide-title">Нежный пломбир<br>с клубничным джемом</h3>
                 <p class="slide-description">Натуральное мороженое из свежих сливок<br>
                   и молока с вкуснейшим клубничным джемом –<br>это идеальный десерт для всей семьи.</p>
-                <a class="btn btn-basic slide-order-btn" href="#">Заказать</a>
+                <a class="btn btn-basic slide-order-btn btn-basic-loading" href="#">Заказать</a>
               </div>
               <ol class="slider-image-list">
                 <li class="slider-image-current-item slider-image-current-first">
                   <img class="slider-image slider-image-current" src="./images/strawberry-icecream.png"
                     alt="Нежный пломбир с клубничным джемом." width="286" height="512">
                   <div class="slider-navigation">
-                    <button class="slider-navigation-button slider-button-prev" type="button">
+                    <button class="slider-navigation-button" type="button">
+                      <svg class="slider-navigation-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.8033 3.80515C10.063 3.54545 10.063 3.12439 9.8033 2.8647C9.54361 2.605 9.12255 2.605 8.86285 2.8647L4.19477 7.53277C3.93593 7.79162 3.93508 8.21075 4.19221 8.47065C4.19338 8.47183 4.19454 8.47301 4.19572 8.47418L8.8638 13.1423C9.12349 13.402 9.54455 13.402 9.80425 13.1423C10.0639 12.8826 10.0639 12.4615 9.80425 12.2018L5.60545 8.00301L9.8033 3.80515Z" />
+                      </svg>
+
                       <span class="visually-hidden">Предыдущий слайд</span>
                     </button>
-                    <button class="slider-navigation-button slider-button-next" type="button">
+                    <button class="slider-navigation-button" type="button">
+                      <svg class="slider-navigation-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.13526 2.8647C6.87557 2.605 6.45451 2.605 6.19481 2.8647C5.93511 3.12439 5.93511 3.54545 6.19481 3.80515L10.3961 8.00643L6.19477 12.2077C5.93508 12.4674 5.93508 12.8885 6.19477 13.1482C6.45447 13.4079 6.87553 13.4079 7.13523 13.1482L11.804 8.47944C11.8049 8.47852 11.8058 8.47759 11.8068 8.47666C12.0665 8.21696 12.0665 7.79591 11.8068 7.53621L7.13526 2.8647Z" />
+                      </svg>
+
                       <span class="visually-hidden">Следующий слайд</span>
                     </button>
                   </div>
@@ -431,7 +444,7 @@
             <label class="delivery-form-label delivery-form-label-adress" for="delivery-adress">Адрес</label>
             <input class="delivery-form-input delivery-form-input-adress" name="delivery" id="delivery-adress"
               type="text" placeholder="ул. Большая Конюшенная, 19/8" required>
-            <button class="btn btn-secondary btn-delivery" type="submit">Отправить</button>
+            <button class="btn btn-secondary btn-delivery btn-secondary-loading" type="submit">Отправить</button>
           </form>
         </section>
         <section class="contacts">
