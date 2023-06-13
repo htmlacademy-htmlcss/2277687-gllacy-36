@@ -515,6 +515,7 @@ body {
     line-height: 20px;
     font-weight: 700;
     color: #2d3440;
+    text-decoration: none;
 }
 
 .user-menu-link {
@@ -747,9 +748,7 @@ body {
 }
 
 .popover-cart-amount {
-    display: -webkit-box;
     display: flex;
-    -webkit-box-pack: justify;
     justify-content: space-between;
     padding: 15px 20px;
 
@@ -1142,6 +1141,7 @@ body {
     border-radius: 20px;
     border: none;
     background-color: rgba(252, 252, 252, .3);
+    -webkit-appearance: none;
     appearance: none;
 
     cursor: pointer;

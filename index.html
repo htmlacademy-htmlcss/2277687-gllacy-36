@@ -32,11 +32,14 @@
               </a>
               <!-- для того, чтобы показать поповер, уберите класс popover-hidden -->
               <section class="popover-catalog popover-hidden">
+                <h2 class="visually-hidden">Каталог</h2>
                 <ul class="popover-catalog-list">
                   <li class="popover-catalog-item popover-catalog-item-new">
                     <a class="popover-catalog-link" href="#">Новинки</a>
                   </li>
-                  <hr class="popover-catalog-divider">
+                  <li>
+                    <hr class="popover-catalog-divider">
+                  </li>
                   <li class="popover-catalog-item">
                     <a class="popover-catalog-link" href="./catalog.html">Сливочное</a>
                   </li>
@@ -66,7 +69,7 @@
         </nav>
         <ul class="header-user-menu">
           <li class="user-menu-item">
-            <p class="user-menu-phone" href="#">+7 800 555-86-28</p>
+            <a class="user-menu-phone" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
           <li class="user-menu-item user-menu-search-item">
             <!-- в открытом состоянии к ссылке добавить класс user-menu-link-active -->
@@ -147,7 +150,7 @@
                       <p class="cart-product-subscription">1 кг х 310 ₽</p>
                     </div>
                   </a>
-                  <p class="cart-product-price" href="#">310 ₽</p>
+                  <p class="cart-product-price">310 ₽</p>
                   <a class="cart-delete-product-btn" href="">
                     <span class="visually-hidden">Удалить продукт из корзины</span>
                   </a>
@@ -161,7 +164,7 @@
                       <p class="cart-product-subscription">1,5 кг х 320 ₽</p>
                     </div>
                   </a>
-                  <p class="cart-product-price" href="#">480 ₽</p>
+                  <p class="cart-product-price">480 ₽</p>
                   <a class="cart-delete-product-btn" href="">
                     <span class="visually-hidden">Удалить продукт из корзины</span>
                   </a>
@@ -495,20 +498,20 @@
             </p>
             <label class="delivery-form-label delivery-form-label-date" for="delivery-date">Дата
               <span class="tooltip">
-                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children"></button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label-children">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date"></button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
                   Укажите дату доставки</span>
               </span>
             </label>
             <input class="input-basic delivery-form-input delivery-form-input-date" name="delivery" id="delivery-date"
-              type="date" placeholder="01.04.2020" required>
+              type="date" required>
             <label class="delivery-form-label delivery-form-label-phone" for="delivery-phone">Телефон</label>
             <input class="input-basic delivery-form-input delivery-form-input-phone" name="delivery" id="delivery-phone"
               type="tel" placeholder="+7 800 999-00-00" required>
             <label class="delivery-form-label delivery-form-label-adress" for="delivery-adress">Адрес
               <span class="tooltip">
-                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children"></button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label-children">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-adress"></button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label-adress">
                   Введите название<br>улицы, дома и квартиры</span>
               </span>
             </label>
@@ -590,10 +593,10 @@
           <label class="visually-hidden" for="support-name">ФИ</label>
           <input type="text" class="input-basic modal-input" name="support-modal" id="support-name"
             placeholder="Имя и фамилия">
-          <label class="visually-hidden" for="email">Электронная почта</label>
+          <label class="visually-hidden" for="support-email">Электронная почта</label>
           <input type="email" class="input-basic modal-input" name="support-modal" id="support-email"
             placeholder="email@example.com">
-          <label class="visually-hidden" for="delivery-modal">Обращение</label>
+          <label class="visually-hidden" for="support-text">Обращение</label>
           <textarea class="input-basic modal-textarea" name="support-modal" id="support-text"
             placeholder="В свободной форме"></textarea>
           <button class="btn btn-secondary btn-modal" type="submit">Отправить</button>
