@@ -34,8 +34,8 @@
               <section class="popover-catalog popover-hidden">
                 <h2 class="visually-hidden">Каталог</h2>
                 <ul class="popover-catalog-list">
-                  <li class="popover-catalog-item popover-catalog-item-new">
-                    <a class="popover-catalog-link" href="#">Новинки</a>
+                  <li class="popover-catalog-item">
+                    <a class="popover-catalog-link popover-catalog-link-new" href="#">Новинки</a>
                   </li>
                   <li>
                     <hr class="popover-catalog-divider">
@@ -87,7 +87,7 @@
               <label class="visually-hidden" for="search">Поиск по сайту</label>
               <form class="search-form" method="post" action="https://echo.htmlacademy.ru/">
                 <input class="input-basic search-input" name="search" id="search" type="text"
-                  placeholder="Поиск по сайту">
+                  placeholder="Поиск по сайту" required>
                 <button class="close-search-button" type="reset"></button>
               </form>
             </section>
@@ -107,10 +107,10 @@
               <form class="login-form" method="post" action="https://echo.htmlacademy.ru/">
                 <label class="visually-hidden" for="login-email">Электронная почта</label>
                 <input class="input-basic login-input login-email-input" name="login-data" id="login-email" type="email"
-                  placeholder="example@test.ru">
+                  placeholder="email@example.com" required>
                 <label class="visually-hidden" for="login-password">Пароль</label>
                 <input class="input-basic login-input login-password-input" name="login-data" id="login-password"
-                  type="email" placeholder="12345678">
+                  type="email" placeholder="••••••" required>
                 <button class="btn btn-secondary login-btn" type="submit">Войти</button>
                 <div class="login-form-links-list">
                   <a class="login-form-link" href="#">Забыли пароль?</a>
@@ -138,32 +138,32 @@
               Нет товаров
             </a>
             <!-- для того, чтобы показать поповер, уберите класс popover-hidden -->
-            <section class="popover-cart popover-hidden">
+            <section class="popover-cart">
               <h2 class="popover-cart-title">Корзина</h2>
               <ul class="popover-cart-products">
                 <li class="popover-cart-product">
-                  <a class="cart-product-description" href="#">
+                  <button class="cart-product-description" type="button">
                     <img class="cart-product-image" width="46" height="46" src="./images/taste-raspberry.png"
                       alt="Малинка">
-                    <div class="cart-product-text">
-                      <p class="cart-product-name">Малинка</p>
-                      <p class="cart-product-subscription">1 кг х 310 ₽</p>
-                    </div>
-                  </a>
+                    <span class="cart-product-text">
+                      <span class="cart-product-name">Малинка</span>
+                      <span class="cart-product-subscription">1 кг х 310 ₽</span>
+                    </span>
+                  </button>
                   <p class="cart-product-price">310 ₽</p>
                   <a class="cart-delete-product-btn" href="">
                     <span class="visually-hidden">Удалить продукт из корзины</span>
                   </a>
                 </li>
                 <li class="popover-cart-product">
-                  <a class="cart-product-description" href="#">
+                  <button class="cart-product-description" type="button">
                     <img class="cart-product-image" width="46" height="46" src="./images/taste-sorbet.png"
                       alt="Бабл-гам">
-                    <div class="cart-product-text">
-                      <p class="cart-product-name">Бабл-гам</p>
-                      <p class="cart-product-subscription">1,5 кг х 320 ₽</p>
-                    </div>
-                  </a>
+                    <span class="cart-product-text">
+                      <span class="cart-product-name">Бабл-гам</span>
+                      <span class="cart-product-subscription">1,5 кг х 320 ₽</span>
+                    </span>
+                  </button>
                   <p class="cart-product-price">480 ₽</p>
                   <a class="cart-delete-product-btn" href="">
                     <span class="visually-hidden">Удалить продукт из корзины</span>
@@ -498,7 +498,7 @@
             </p>
             <label class="delivery-form-label delivery-form-label-date" for="delivery-date">Дата
               <span class="tooltip">
-                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date"></button>
+                <a class="tooltip-toggle" aria-labelledby="tooltip-label-date" href=""></a>
                 <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
                   Укажите дату доставки</span>
               </span>
@@ -510,7 +510,7 @@
               type="tel" placeholder="+7 800 999-00-00" required>
             <label class="delivery-form-label delivery-form-label-adress" for="delivery-adress">Адрес
               <span class="tooltip">
-                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-adress"></button>
+                <a class="tooltip-toggle" href="" aria-labelledby="tooltip-label-adress"></a>
                 <span class="tooltip-text" role="tooltip" id="tooltip-label-adress">
                   Введите название<br>улицы, дома и квартиры</span>
               </span>
@@ -585,20 +585,20 @@
     <!-- чтобы показать модальное окно, уберите класс modal-hidden -->
     <div class="modal modal-hidden">
       <section class="modal-dialog">
-        <button class="modal-close">
+        <button class="modal-close" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <h2 class="modal-title">Мы обязательно ответим вам!</h2>
         <form class="modal-form" method="post" action="https://echo.htmlacademy.ru/">
           <label class="visually-hidden" for="support-name">ФИ</label>
           <input type="text" class="input-basic modal-input" name="support-modal" id="support-name"
-            placeholder="Имя и фамилия">
+            placeholder="Имя и фамилия" required>
           <label class="visually-hidden" for="support-email">Электронная почта</label>
           <input type="email" class="input-basic modal-input" name="support-modal" id="support-email"
-            placeholder="email@example.com">
+            placeholder="email@example.com" required>
           <label class="visually-hidden" for="support-text">Обращение</label>
           <textarea class="input-basic modal-textarea" name="support-modal" id="support-text"
-            placeholder="В свободной форме"></textarea>
+            placeholder="В свободной форме" required></textarea>
           <button class="btn btn-secondary btn-modal" type="submit">Отправить</button>
         </form>
       </section>
