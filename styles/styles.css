@@ -678,12 +678,6 @@ body {
   line-height: 20px;
   color: #2d3440;
   text-decoration: none;
-  text-align: left;
-
-  background-color: transparent;
-  border: none;
-
-  cursor: pointer;
 }
 
 .cart-product-image {
@@ -698,11 +692,17 @@ body {
 .cart-product-name {
   margin: 0;
   margin-bottom: 4px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
   display: block;
 
+  text-align: left;
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
+
+  cursor: pointer;
 }
 
 .cart-product-subscription {
@@ -724,12 +724,16 @@ body {
 
 .cart-delete-product-btn {
   display: block;
-  justify-self: flex-end;
   min-width: 16px;
   width: 16px;
   height: 16px;
+  padding: 0;
 
   background-image: url("../images/cross.svg");
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
 }
 
 .popover-cart-amount {
@@ -1190,7 +1194,6 @@ body {
   margin: 0;
 
   background-color: #fcfcfc;
-  /* background-clip: padding-box; */
   border-radius: 50%;
   border: 6px #2d3440 solid;
 
@@ -1431,8 +1434,6 @@ body {
   border-radius: 50%;
   border: 2px #fcfcfc solid;
   background-color: rgba(252, 252, 252, .3);
-  /* background-position: center center;
-    background-repeat: no-repeat; */
 
   cursor: pointer;
 }
@@ -1499,10 +1500,6 @@ body {
 .slider-image-current-first::before {
   width: 327px;
 }
-
-/* .slider-image-current-second {
-    margin-top: 13px;
-} */
 
 .slider-image-current-second::before {
   width: 312px;
